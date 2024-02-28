@@ -1,0 +1,29 @@
+/* Custom styles for the Rasa Webchat */
+.webchat-container {
+    background-color: #f0f0f0; /* Change background color */
+  }
+  
+  .webchat-header {
+    background-color: #333; /* Change header background color */
+  }
+  
+  .webchat-title,
+  .webchat-subtitle {
+    color: #fff; /* Change text color */
+  }
+  
+  .webchat-sender-input input[type="text"] {
+    background-color: #fff; /* Change input field background color */
+    color: #333; /* Change input field text color */
+    border: 1px solid #ccc; /* Change input field border color */
+  }
+  
+  .webchat-sender {
+    background-color: #333; /* Change send button background color */
+    color: #fff; /* Change send button text color */
+  }
+  
+  .webchat-sender:hover {
+    background-color: #555; /* Change send button background color on hover */
+  }
+  

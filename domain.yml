@@ -1,0 +1,57 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - neworder
+  - order_food
+  - order_checkout
+  - remove_item
+  - order_complete
+  - trackorder
+  - orderstatus
+  - get_user_info
+  - user 
+
+  
+entities:
+  - food_item
+  - quantity
+  - first_name
+  - last_name
+  - order_id
+
+
+ 
+responses:
+  utter_greet:
+    - text: "आपका स्वागत हे | कहीये  मे आप की क्या सहायता कर सकता हु |           1.नया आर्डर दर्ज करे |          2. ट्रैक आर्डर |" 
+                                                             
+  utter_neworder:
+    - text: नया आर्डर करने के लिए हमारे मेनू मे से आर्डर कीजिये हमारा मेनू -         1. pizza     2. pasta        3. soups         4. sandwitches         5. burger        6. samosa       7. pavbhaji        "
+    
+  utter_goodbye:
+    - text: "आपका दिन शुभ हो |"
+ 
+  utter_get_user_info:
+    - text : "अपना नाम और सरनेम डाले "
+
+  utter_action_fallback :
+     - text: "मुजे समज नहीं आया ,कृपया नया आर्डर के लिए नया आर्डर लिखिए और ट्रैक आर्डर कराने के लिए ट्रैक आर्डर लिखिए "
+     - custom:
+        action_name: action_fallback
+
+
+
+actions:
+  - action_add_items_to_order
+  - action_remove_items_from_order
+  - action_order_checkout
+  - action_order_finish
+  - action_track_order
+  - action_store_user_info
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

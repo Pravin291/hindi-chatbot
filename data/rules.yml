@@ -1,0 +1,58 @@
+version: "3.1"
+
+rules:
+
+- rule: this is for greet message
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: it for new order
+  steps:
+  - intent: neworder
+  - action: utter_neworder
+
+- rule:  this is for track order
+  steps:
+  - intent: trackorder
+  - action: action_track_order  
+  # - action: utter_trackorder
+
+# - rule: for checking order status
+#   steps:
+#   - intent: orderstatus
+#   - action: utter_orderstatus
+
+- rule : add food items to order 
+  steps:
+  - intent : order_food
+  - action : action_add_items_to_order
+
+- rule :
+  steps:
+  - intent: order_checkout
+  - action: action_order_checkout
+
+
+- rule : order complete 
+  steps:
+  - intent : order_complete
+  - action : action_order_finish
+
+
+
+- rule : this is for removing item from list 
+  steps:
+  - intent : remove_item
+  - action: action_remove_items_from_order
+
+
+ 
+  
+
+

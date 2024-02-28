@@ -1,0 +1,86 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - नमस्ते
+    - हेलो 
+    - हेल्लो 
+    - शुभ प्रभात
+    - शुभ संध्या
+    - सुनो
+    - अरे यार
+    - शुभ दोपहर
+
+
+- intent: goodbye
+  examples: |
+    - बाद में मिलेंगे
+
+     
+
+- intent: neworder
+  examples: |
+    - नया आर्डर
+    - नया आर्डर दर्ज करे
+    - नया आर्डर 
+
+- intent: trackorder
+  examples: |
+    -  [5](order_id)
+    -  [10](order_id)
+    -  ट्रैक आर्डर
+    -  मेरा आर्डर ट्रैक करो 
+
+- intent: orderstatus
+  examples: |
+    - आर्डर स्टेटस चेक करे
+    - आर्डर स्टेटस 
+
+- intent : order_checkout
+  examples: |
+    - नहि 
+    - कुच नहि 
+    - नही
+    - बस कुछ नही
+    - इतनाही
+
+- intent :  order_complete
+  examples: |
+    - हा
+    - ओके  
+
+- intent: order_food
+  examples: |
+    - मे [2](quantity) [pizza](food_item) आर्डर करना चाहता हु
+    - [3](quantity) [samosa](food_item) और [1](quantity) [pavbhaji](food_item) आर्डर मे जोड़ दे 
+    - [4](quantity) [vadapav](food_item),[5](quantity) [burger](food_item)
+    - [6](quantity) [Sandwiche](food_item),[7](quantity) [soup](food_item) 
+    - [8](quantity) [pasta](food_item)
+
+    - मे [२](quantity) [पिज्जा](food_item) आर्डर करना चाहता हु
+    - [३](quantity) [समोसा](food_item) और [१](quantity) [पावभाजी](food_item) आर्डर मे जोड़ दे 
+    - [४](quantity) [वडापाव](food_item),[५](quantity) [बर्गर](food_item)
+    - [६](quantity) [पास्ता](food_item),[७](quantity) [सुप्स](food_item) 
+    - [८](quantity) [पास्ता](food_item)
+
+- intent : remove_item
+  examples : |
+    - मे [2](quantity) [pizzas](food_item) हटाओ 
+    - [3](quantity) [samosas](food_item) और [1](quantity) [pavbhaji](food_item) आर्डर मे से निकाल दो 
+    - [4](quantity) [vadapav](food_item),[5](quantity) [burger](food_item)
+    - [6](quantity) [Sandwiches](food_item),[7](quantity) [soups](food_item) निकाल दो 
+    - [8](quantity) [pastas](food_item) निकाल दो 
+
+
+- intent : get_user_info
+  examples : |
+    - नया आर्डर 
+
+- intent : user
+  examples: |
+    - मेरा नाम [Pravin](first_name) [Bhosale](last_name) हे 
+    - [Ayaj](first_name) [Ansari](last_name)
+    
+ 
+
